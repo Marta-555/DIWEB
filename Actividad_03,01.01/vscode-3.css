@@ -1,14 +1,23 @@
-@font-face { }
-
-@test { }
-
-body { }
-
-p {
-    xyz: black;
-    display: inline;
-    width: 100%;
-    -webkit-flex: flex;
+@font-face {
+    font-family: "Bitstream Vera Serif Bold";
+    src: url("https://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
 }
 
-#ab { }
+/*@test { }*/
+
+body {
+    background-color: aqua;
+}
+
+p {
+    color: black;
+    display: inline;
+    width: 100%;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+}
+
+#ab {
+    color:burlywood;
+    margin: auto;
+}
