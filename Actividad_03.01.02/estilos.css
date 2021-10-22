@@ -1,0 +1,41 @@
+body {
+    margin:10px 10%;
+    background-color:#D3D3D3;
+    font-family: sans-serif;
+    text-align: justify;
+  }
+
+  h1 {
+    letter-spacing: 60%;
+    font-size: 300%;
+    text-align: center;
+  }
+
+  .titulos {
+    color: white;
+    background-color: hsl(0, 0%, 50%);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 200%;
+    padding: 5px;
+  }
+
+  p {
+    margin-top: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-indent: 5%;
+  }
+
+  img {
+    float: left;
+    margin-right: 2%;
+  }
+
+  strong {
+    background-color: white;
+  }
+
+  em {
+    color: red;
+  }
