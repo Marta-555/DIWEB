@@ -14,7 +14,7 @@ h2 {
 }
 p {
     line-height: 200%;
-    text-indent: 550%;
+    text-indent: 25px;
 }
 strong {
     color: hsl(25, 75%, 47%);
@@ -30,7 +30,7 @@ span {
     font-family: "Comic Sans", cursive;
 }
 time {
-    color: hsl(8, 100%, 74%);
+    color: hsl(21, 100%, 65%);
 }
 address {
     font-size: 80%;
