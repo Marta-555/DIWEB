@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    font-size: 130%;
+}
+h1{
+   border: black 5px solid;
+   text-align: center;
+   text-transform: uppercase;
+}
+p{
+    margin-bottom: 50px;
+    text-align:justify;
+}
+.a{
+    border-left: double 20px red;
+    border-top: double 20px red;
+}
+.b{
+    border-color: blue green;
+    border-width: 5px 10px 20px 40px;
+    border-style: dashed;
+}
+.c{
+
+}

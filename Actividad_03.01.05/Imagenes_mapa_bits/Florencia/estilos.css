@@ -1,0 +1,38 @@
+body{
+    background-color: hsl(69, 10%, 75%);
+    font-family: sans-serif;
+    font-size: 150%;
+    text-align: justify;
+}
+h1{
+    color: hsl(240, 65%, 25%);
+    font-weight: 900;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+}
+h2{
+    clear: both;
+    background-color: hsl(68, 29%, 30%);
+    color: white;
+}
+.centrado{
+    text-align: center;
+}
+.izquierda{
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+.derecha{
+    float: right;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+strong{
+    font-style: oblique;
+}
+address{
+    clear: both;
+    font-size: 80%;
+}
