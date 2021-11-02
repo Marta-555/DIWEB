@@ -1,0 +1,30 @@
+body{
+    margin: 0 15%;
+    background-color: hsl(14, 20%, 45%);
+    color: white;
+    font-family: sans-serif;
+    font-size: 150%;
+    text-align: justify;
+}
+h1{
+    margin: 1.5% 10%;
+    font-size: 135%;
+    text-align: center;
+}
+p{
+    line-height: 200%;
+}
+nav{
+    font-size: 130%;
+    text-align: center;
+    text-transform: uppercase;
+}
+p a{
+    border: 5px solid hsl(195, 61%, 25%);
+    border-radius: 10px;
+    margin: 1.5%;
+    padding: 5px;
+    background-color: white;
+    color: hsl(195, 61%, 25%);
+    text-decoration: unset;
+}
