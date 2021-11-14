@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*Aplicamos el estilo*/
+.container{
+  position: relative;
+}
+.caja{
+width: 180px;
+height: 180px;
+background-color: #30B037;
+color: #FFF;
+text-align: center;
+line-height: 180px;
+margin: 15px;
+float: left;
+font-size: 18px;
+font-family: Arial;
+}
+
+.caja1{
+  background-color:hsl(6, 64%, 46%);
+  transition: 1s linear;
+}
+.caja1:hover{
+  transform: scale(.5);
+}
+
+.caja2{
+  background-color: hsl(283, 39%, 53%);
+  transition: 1s linear;
+}
+.caja2:hover{
+  transform: rotate(360deg);
+}
+
+.caja3{
+  background-color: hsl(204, 64%, 44%);
+  transition: 1s linear;
+}
+.caja3:hover{
+  transform: translate(10%);
+}
+
+.caja4{
+  background-color: hsl(204, 70%, 53%);
+  transition: 1s linear;
+}
+.caja4:hover{
+  transform: skew(10deg);
+}
+
+.caja5{
+  background-color: hsl(168, 76%, 37%);
+  transition: 1s linear;
+}
+.caja5:hover{
+  transform: skewY(10deg);
+}
+
+.caja6{
+  background-color: hsl(48, 89%, 50%);
+  transition: 1s linear;
+}
+.caja6:hover{
+  transform: skewX(-5deg);
+}
+
+.caja7{
+  background-color: hsl(28, 80%, 52%);
+  transition: 1s linear;
+}
+.caja7:hover{
+  transform: translateX(20px);
+}
+
+.caja8{
+  background-color: hsl(184, 9%, 62%);
+  transition: 1s linear;
+}
+.caja8:hover{
+  transform: translateY(20px);
+}
+
+.caja9{
+  background-color: hsl(210, 29%, 24%);
+  transition: 1s linear;
+}
+.caja9:hover{
+  transform: perspective(150px) rotateX(45deg);
+}
+
+/*corregir caja10*/
+.caja10{
+  background-color: hsl(0, 0%, 50%);
+  transition: 1s linear;
+}
+.caja10{
+  transform: perspective(150px) rotateY(45deg);
+}
+
+.caja11{
+  background-color: black;
+  transition: 1s linear;
+}
+.caja11:hover{
+  transform: matrix(0.5, 0.1, 0.5, 1, 10, -2);
+}
