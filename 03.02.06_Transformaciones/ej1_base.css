@@ -71,7 +71,7 @@ font-family: Arial;
   transition: 1s linear;
 }
 .caja1:hover{
-  transform: scale(.5);
+  transform: scale(0.5);
 }
 
 .caja2{
