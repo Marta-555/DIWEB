@@ -138,12 +138,11 @@ font-family: Arial;
   transform: perspective(150px) rotateX(45deg);
 }
 
-/*corregir caja10*/
 .caja10{
   background-color: hsl(0, 0%, 50%);
   transition: 1s linear;
 }
-.caja10{
+.caja10:hover{
   transform: perspective(150px) rotateY(45deg);
 }
 
