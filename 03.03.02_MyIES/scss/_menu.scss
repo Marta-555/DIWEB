@@ -1,0 +1,90 @@
+@keyframes iluminar {
+    from {
+        @include colorTextoFondo;
+    }
+    to {
+        @include color_hover;
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: #eee;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    >ul {
+        width: 100%;
+        height: 32px;
+        @include colorTextoFondo;
+    }
+
+    a {
+        @include colorTextoFondo;
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            @include color_hover;
+            @include animation(iluminar, 0.4s, linear);
+        }
+    }
+}
+
+ul.submenu {
+    @include transition(height, 0.5s, ease-out);
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+}
+
+li.categoria {
+    float: left;
+
+    >a {
+        @include transition(padding, 0.4s, ease-out);
+    }
+
+    &:hover {
+        >a {
+            padding: 10px 20px;
+        }
+
+        ul.submenu {
+            height: 100px;
+        }
+    }
+}
+
+footer {
+    @include colorTextoFondo;
+    @include box-sizing(border-box);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+}
