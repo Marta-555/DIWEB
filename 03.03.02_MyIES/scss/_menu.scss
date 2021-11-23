@@ -7,21 +7,6 @@
     }
 }
 
-body {
-    padding: 0px;
-    margin: 0px;
-}
-
-header {
-    padding: 12px 30px;
-    font-size: 1.8em;
-    color: #444;
-    background-color: #eee;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #aaa;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 nav {
     position: absolute;
     width: 100%;
@@ -31,6 +16,13 @@ nav {
         list-style-type: none;
         padding: 0px;
         margin: 0px;
+
+        .submenu {
+            @include transition(height, 0.5s, ease-out);
+            position: absolute;
+            height: 0px;
+            overflow: hidden;
+        }
     }
 
     >ul {
@@ -55,13 +47,6 @@ nav {
     }
 }
 
-ul.submenu {
-    @include transition(height, 0.5s, ease-out);
-    position: absolute;
-    height: 0px;
-    overflow: hidden;
-}
-
 li.categoria {
     float: left;
 
@@ -78,13 +63,4 @@ li.categoria {
             height: 100px;
         }
     }
-}
-
-footer {
-    @include colorTextoFondo;
-    @include box-sizing(border-box);
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    padding: 5px;
 }
