@@ -1,0 +1,32 @@
+.verde{
+    background-color: green;
+    height: 50px;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.rosa{
+    background-color: orchid;
+    height: 50px;
+}
+
+.naranja{
+    background-color: orange;
+    height: 150px;
+}
+
+.azul{
+    background-color: blue;
+    height: 100px;
+}
+
+.verde2{
+    background-color: green;
+    height: 30px;
+}
+
+div{
+    border: 3px solid white;
+}
