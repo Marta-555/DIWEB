@@ -1,0 +1,35 @@
+.verde{
+    background-color: green;
+    height: 50px;
+}
+
+.azul{
+    background-color: hsl(215, 56%, 70%);
+    height: 150px;
+}
+
+.gris{
+    background-color: hsl(240, 1%, 80%);
+    height: 150px;
+}
+
+.azulC{
+    background-color: hsl(180, 93%, 58%);
+    height: 70px;
+}
+
+.naranja{
+    background-color: hsl(23, 99%, 68%);
+    height: 150px;
+}
+
+.verde2{
+    background-color: green;
+    height: 30px;
+}
+
+div{
+    border: 3px solid white;
+    text-align: center;
+}
+
