@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Bootstrap - formularios</title>
+  </head>
+  <body>
+
+    <div class="container-fluid ">
+      <div class="row m-5">
+
+        <div class="col-md-4">
+          <div class="row m-3">
+            <img src="Logo.jpg" alt="" class="w-75 mx-auto d-block">
+          </div>
+
+          <div class="row m-3">
+            <blockquote class="blockquote bg-info">
+              <p>Cumplimentar el formulario de registro para poder disponer de todos los servicios de la web</p>
+              <footer class="footer-blockquote text-danger">Web de servicios</footer>
+            </blockquote>
+          </div>
+
+        </div>
+
+        <div class="col-md-7">
+          <div class="text-center">
+            <h3>Formulario de Registro</h3>
+          </div>
+
+          <div class="border border-primary">
+            <form class="mb-4 mt-4 m-5 needs-validation" novalidate>
+              <div class="form-group row p-2">
+                <label for="inputUsuario" class="col-md-3 col-sm-12 form-label">Usuario:</label>
+                <div class="col-md-9 col-sm-12">
+                  <input type="text" class="form-control" placeholder="Username" required>
+                </div>
+              </div>
+
+              <div class="form-group row p-2">
+                <label for="inputEmail" class="col-md-3 col-sm-12 col-form-label">Email:</label>
+                <div class="col-md-9 col-sm-12">
+                  <input type="email" class="form-control" placeholder="email" required>
+                </div>
+              </div>
+
+              <div class="form-group row p-2">
+                <label for="inputPassw" class="col-md-3 col-sm-12 col-form-label">Contraseña:</label>
+                <div class="form-group col-md-9 col-sm-12">
+                  <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+              </div>
+
+              <div class="form-group row p-2">
+                <div class="col-md-3 col-sm-12">Sexo:</div>
+                <div class="col-md-9 col-sm-12">
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="radio1" value="hombre" required>
+                    <label class="form-check-label" for="radio1">Hombre</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="radio2" value="mujer" required>
+                    <label class="form-check-label" for="radio2">Mujer</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row p-2 bg-dark text-white pb-1">
+                <label for="foto" class="form-label">Seleccionar foto de perfil:</label>
+                <input class="form-control-file" type="file" name="foto" id="foto" required>
+              </div>
+
+              <div class="form-group row p-2">
+                <div class="offset-9">
+                  <input class="btn btn-primary w-25" type="submit" value="Registrar">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+  </body>
+</html>
