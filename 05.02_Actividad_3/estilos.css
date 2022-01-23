@@ -1,0 +1,50 @@
+.verde{
+    background-color: green;
+    height: 50px;
+}
+
+.rojo{
+    background-color: red;
+    height: 200px;
+}
+
+.amarillo{
+    background-color: yellow;
+    height: 40px;
+}
+
+.verde2{
+    background-color: green;
+    height: 150px;
+}
+
+.azul2{
+    background-color: aqua;
+}
+
+div{
+    border: 3px solid white;
+
+}
+
+
+@media screen and (max-width: 767px){
+    .verde{
+        background-color: aqua;
+    }
+
+    .amarillo{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+    .verde{
+        background-color: salmon;
+        text-align: center;
+    }
+    .amarillo{
+        text-align: center;
+    }
+}
