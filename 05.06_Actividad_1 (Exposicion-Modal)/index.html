@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Modal</title>
+
+    <style>
+      h3{
+        text-indent: 30px;
+      }
+    </style>
+  </head>
+  <body class="m-5">
+    <h1 class="text-center">COMPONENTE MODAL</h1>
+
+    <div class="row">
+      <div class="m-5">
+        <h3 class="m-4">Características y estructura</h3>
+        <ul class="m-3">
+          <li>El complemento Modal de Bootstrap se suele utilizar para agregar cuadros de diálogo, notificaciones de usuario o contenido adicional.</li>
+          <li>Al activar este componente se crea una ventana que se posiciona sobre el resto de elementos, oscureciendo y deshabilitando el resto de la página.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="text-center">
+        <img src="COMPONENTE MODAL.png" alt="" >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <img src="boton.png" alt="" >
+      </div>
+      <div class="col-md-5">
+        <ul>
+          <li>data-bs-toggle: indicamos que vamos a abrir un modal</li>
+          <li>data-bs-target: especificamos el ID del modal que vamos a abrir</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center"><h3 class=" m-5">Ejemplos</h3></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-8">
+        <img src="ejm1.PNG" alt="">
+      </div>
+      <div class="col-md-3">
+        <!--BOTÓN-->
+        <!--En el botón utilizaremos dos propiedades: toggle, indicamos que vamos a abrir un modal, y target, especificamos cúal vamos a abrir-->
+        <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Activar modal</button>
+
+        <!--MODAL-->
+        <!--Div padre (.modal)-->
+        <div class="modal" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle">
+
+          <!--Contenedor del modal (.modal-dialog)-->
+          <div class="modal-dialog">
+
+            <!--Contenido del modal (.modal-content)-->
+            <div class="modal-content">
+
+              <!--El contenido se divide en tres partes: .modal-header, .modal-body y .modal-footer-->
+
+              <!--1. .modal-header: .modal-title (para los títulos), .dismiss (para el botón X)-->
+              <div class="modal-header">
+                <!--Titulos: .modal-title-->
+                <h5 class="modal-title" id="modalTitle">Título del modal</h5>
+                <!--Agregamos un botón X para cerrar el modal (.dismiss, indicamos que vamos a cerrar un modal)-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <!--2. .modal-body: Dentro podemos usar cualquier tipo de elemento (grid, cuadrícula de bootstrap,etc ) -->
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, velit, dolore recusandae ea, illum eaque laboriosam dolorum cum ipsam quo architecto ducimus. Distinctio doloremque, ipsam fuga adipisci eius expedita molestiae.</p>
+              </div>
+
+              <!--3. .modal-footer: Podemos agregar los botones que queramos, por ejemplo, .dismiss (para el botón de cerrar), -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row"><div class="col-md-12 m-5"></div></div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-3">
+        <!--MODAL FLUIDO-->
+        <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFade">Modal fluido</button>
+
+        <!--Añadimos al padre la clase fade, para un efecto fluido-->
+        <div class="modal fade" id="modalFade" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Título del modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla alias ipsam deserunt modi. Ipsum tenetur sit voluptas error corrupti qui dignissimos, laboriosam ullam dolorum! Repellat fuga natus corporis esse.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-8">
+        <img src="ejm2.PNG" alt="">
+      </div>
+
+    </div>
+
+
+    <div class="row"><div class="col-md-12 m-5"></div></div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCentrado">Modal centrado</button>
+
+        <div class="modal fade" id="modalCentrado" tabindex="-1" aria-hidden="true">
+          <!--Podemos centrar el modal añadiendo .modal-dialog-centered-->
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Título del modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla alias ipsam deserunt modi. Ipsum tenetur sit voluptas error corrupti qui dignissimos, laboriosam ullam dolorum! Repellat fuga natus corporis esse.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <img src="ej3.PNG" alt="">
+      </div>
+
+    </div>
+
+    <div class="row"><div class="col-md-12 m-5"></div></div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-2">
+        <div class="row">
+          <!--MODAL DE CONTENIDO LARGO-->
+          <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLargo">Modal de contenido largo</button>
+
+          <div class="modal fade" id="modalLargo" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Título del modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nemo similique autem, ipsa deleniti, eius quae delectus illo doloribus, accusamus eos. Assumenda, quis sunt veritatis, ipsam voluptatem voluptatibus, fugiat aliquid eligendi hic laborum esse eveniet necessitatibus ex a accusantium voluptas temporibus consequuntur? Tenetur ratione perspiciatis eos error autem quam accusamus modi nostrum facere, enim repellendus voluptatem impedit consectetur iusto tempore laudantium nemo non porro? Corrupti alias veniam ullam possimus consequuntur harum eveniet magni placeat laudantium odio? Cum harum excepturi, deserunt possimus enim doloribus voluptatem aut sapiente atque! Sit aspernatur maiores inventore quisquam neque tempore laboriosam vero totam laborum. Eveniet cupiditate molestiae unde quia officia suscipit praesentium illum vitae quod commodi? Possimus modi quibusdam nemo facilis ipsum nihil quae consectetur numquam esse dicta, ad, totam laudantium doloremque, ratione rerum. Officia nesciunt dolorum architecto doloribus dolorem velit, praesentium soluta quae perspiciatis commodi? Odit libero ullam deserunt vel eos provident numquam, architecto a aut explicabo sequi ut veritatis minus distinctio assumenda dolorum illum placeat officia aliquid iusto eligendi. Fuga exercitationem maxime incidunt distinctio consequuntur accusamus soluta nulla eaque laudantium mollitia quae blanditiis fugit molestiae velit illum repellat assumenda sit ducimus, tempore qui atque. Aspernatur culpa et ut officia odio cumque possimus deleniti, perferendis obcaecati earum vero rerum distinctio ad totam, iste itaque, accusamus quae ipsum ullam! Dignissimos aspernatur animi nobis quia vel incidunt ea in doloribus culpa magnam? Reiciendis, corrupti molestiae? Facere voluptates fugiat sint quisquam vero vel non laboriosam delectus porro facilis, officia soluta consectetur sit expedita magni magnam molestias veritatis, doloremque molestiae. Eius eos exercitationem dolorem inventore illo iste ipsam quidem, eveniet accusantium eligendi, corporis expedita, ad nostrum praesentium! Autem, inventore! Dolore sequi architecto mollitia? Quibusdam minus doloribus minima porro. Eveniet a repellat odio, esse quia cum possimus nulla ipsum voluptas quod consectetur, ad aliquam sequi iusto numquam ut illum, alias suscipit. Ipsa fugiat non consequuntur, excepturi voluptatum modi sapiente eos repellendus distinctio rem labore neque porro adipisci aperiam pariatur eaque provident mollitia odit dolore error quasi quo debitis id! Sint dolor ut ex sed optio porro ab qui. Iure impedit eos, ducimus adipisci nesciunt aspernatur fugit unde optio deserunt doloribus, est pariatur inventore voluptatem illo repellendus nihil, saepe dolorem ex assumenda! Quaerat porro fuga pariatur itaque nihil impedit, similique aliquid doloribus. Odit, atque nulla. Ratione itaque, dolore alias officiis nihil commodi molestiae aperiam praesentium consectetur soluta veritatis ipsa qui sapiente accusantium, iste magni ea obcaecati omnis amet ducimus, neque inventore rem cupiditate! Sint voluptate corrupti ratione rem. Totam voluptate impedit ratione laborum doloremque ducimus saepe, ut tempore, reprehenderit adipisci tempora labore corporis obcaecati, sed at modi fuga nisi. Facilis laboriosam numquam ducimus atque libero provident corporis eligendi aut voluptatem, laborum fugiat cum ea quas cumque doloribus totam assumenda consequatur labore ex. Natus ipsa repellat sequi delectus, blanditiis perferendis sunt fugit, accusamus similique error a recusandae est culpa itaque explicabo eveniet ipsum placeat accusantium commodi non totam vero odio voluptate. At facere quis nam iure rerum voluptatum debitis itaque voluptatibus officiis cumque repellendus minus quaerat earum, deserunt, ipsam, impedit tenetur!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!--MODAL LARGO CON SCROLL-->
+          <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalScroll">Modal largo con scroll</button>
+
+          <div class="modal fade" id="modalScroll" tabindex="-1" aria-hidden="true">
+            <!--Añadimos un scroll con .modal-dialog-scrollable-->
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Título del modal</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus corporis alias rerum tenetur error nisi, accusantium, quae quod ea facilis sint, voluptas magni nihil architecto voluptatem ratione officiis dolore eveniet dolorem. Quam, labore. Optio laboriosam harum recusandae, excepturi at animi ullam provident voluptates quam autem, a asperiores. Culpa pariatur debitis iure voluptate optio quo sint ea ut voluptatem voluptates vel, nulla maiores fuga. Asperiores expedita vitae excepturi tempore quas, doloribus saepe labore natus debitis doloremque, hic quos sit eos soluta ipsum! Totam ex qui consectetur doloremque tempora esse delectus impedit magnam rerum, accusantium, possimus odit debitis quibusdam molestias in mollitia sapiente voluptate doloribus. Officia sapiente corrupti tempora aut? Quaerat cum nemo repudiandae quos repellendus, sint nostrum sunt, impedit debitis, architecto accusantium facilis quisquam quidem harum dolor recusandae? Autem, molestiae. Nemo autem nostrum corrupti quidem! Cum, deserunt expedita magni voluptates eligendi itaque ratione similique sequi perspiciatis voluptatibus maxime, architecto omnis? Provident quos iste adipisci numquam vero debitis laudantium omnis eveniet dolorem blanditiis voluptatem libero, architecto tenetur eos eligendi ipsa rerum voluptates nam, qui exercitationem ratione. Nesciunt esse deserunt magnam labore recusandae, totam est error ea suscipit nemo tempora obcaecati eum doloremque quaerat iste aut unde! Mollitia quisquam maxime delectus illum obcaecati exercitationem commodi quae voluptatum nihil consequuntur odit dicta cupiditate a deserunt laboriosam numquam nulla molestias enim, nobis distinctio? Soluta modi ab dolor maxime, tempora nemo sapiente ratione quibusdam ipsa praesentium debitis excepturi aliquid repellat accusamus sed reprehenderit, suscipit in dolorem doloremque voluptatem atque beatae. Nostrum eaque molestiae rerum culpa officiis ducimus molestias velit, numquam vel minima unde obcaecati amet quos quae! Molestiae delectus quibusdam repudiandae repellat explicabo amet iste odio? Dicta amet, praesentium quia recusandae sed aut nisi non enim accusantium nihil officiis quod, odit perspiciatis ullam temporibus distinctio reprehenderit deleniti sunt libero? Aperiam ab ipsam ex facilis, fugit, optio similique quidem consequuntur delectus eaque blanditiis amet illo vel cum nulla natus omnis nihil a, repellat commodi voluptatum eum porro veniam. Cum provident fugiat, laudantium, iure quasi ab eos quo totam officia asperiores commodi eum dicta aspernatur obcaecati ratione voluptates modi assumenda maxime at molestias. Obcaecati tempore totam a ullam excepturi perspiciatis eligendi alias unde temporibus, quidem numquam dicta eius saepe vitae voluptatum ratione blanditiis beatae sunt voluptas nemo quo. Necessitatibus, nulla saepe. Porro eos placeat quam eum tenetur numquam repellendus velit adipisci, eius nam assumenda nihil beatae laborum consequuntur expedita, ratione a, iste accusamus animi. Quis cum, odio non inventore temporibus nostrum similique blanditiis aspernatur ducimus aut magni voluptas at enim natus id suscipit distinctio expedita iste rem placeat maiores exercitationem optio fugit. Doloribus, iure voluptates vitae non ipsum facilis alias magni dicta accusamus deserunt ipsam unde ut quas autem praesentium, vero consequatur eligendi id reprehenderit sed recusandae similique. Ducimus, fugit tempora possimus vero nulla fuga doloribus alias dolorum non nam nihil minus iste voluptate deserunt est id adipisci, officia dicta aspernatur illum explicabo impedit. Quis incidunt sit tempore impedit dolores? Repellendus deserunt cumque magni quia magnam est, dolorem harum deleniti fugiat asperiores perspiciatis quasi possimus! Sit, repudiandae quae.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+
+      <div class="col-md-8">
+        <img src="ej4.PNG" alt="">
+      </div>
+
+    </div>
+
+
+    <div class="row"><div class="col-md-12 m-5"></div></div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <!--MODAL FIJO-->
+        <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFijo">Modal fijo</button>
+
+        <!--Para que no se cierre el modal al clicar fuera añadimos .data-bs-backdrop(static) -->
+        <div class="modal fade" id="modalFijo" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Título del modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla alias ipsam deserunt modi. Ipsum tenetur sit voluptas error corrupti qui dignissimos, laboriosam ullam dolorum! Repellat fuga natus corporis esse.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <img src="ej5.PNG" alt="">
+      </div>
+
+    </div>
+
+
+    <div class="row"><div class="col-md-12 m-5"></div></div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <!--COMO IR DE UN MODAL A OTRO-->
+        <button type="button" class="m-3 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Modal dentro de otro</button>
+
+        <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Título del modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Contenido del primer modal</p>
+
+                <!--Añadimos un botón con las propiedades toggle y target, para abrir el segundo modal, y dismiss, para que este primer modal se oculte-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2" data-bs-dismiss="modal">Abrir segundo modal</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Título del modal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Contenido del segundo modal</p>
+              </div>
+              <div class="modal-footer">
+                <!--Creamos un enlace, con estilo de botón, para volver al modal1 con las propiedades toggle(para activar el modal) y dismiss(para ocultar el modal2)-->
+                <a class="btn btn-primary" href="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal" role="button">Volver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <img src="ej8.PNG" alt="">
+      </div>
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
